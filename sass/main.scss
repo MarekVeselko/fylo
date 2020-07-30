@@ -1,0 +1,12 @@
+@import "abstract/mixins";
+@import "abstract/variables.scss";
+
+@import "base/base";
+@import "base/parts";
+
+@import "layouts/header";
+@import "layouts/top";
+@import "layouts/service";
+@import "layouts/productive";
+@import "layouts/reviews";
+@import "layouts/footer";

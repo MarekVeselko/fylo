@@ -1,0 +1,72 @@
+.productive{
+    display: flex;
+    width: 80%;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    @include respond(phone){
+        flex-direction: column;
+      }
+    
+
+    &__img{
+        &--img{
+    width: 50rem;
+    margin-right: auto;
+    @include respond(tab){
+        margin-top: 10rem;
+        width: 35rem;
+      }
+      @include respond(phone-small){
+       width: 25rem;
+      }
+        }
+    }
+
+    &__text{
+        margin-top: 10rem;
+        margin-left: 5rem;
+
+        @include respond(tab){
+            margin-top: 5rem;
+          }
+          @include respond(phone-small){
+              margin-left: 0;
+
+           }
+    }
+
+    &__title{
+        color:#fff;
+        font-family: 'Recursive', sans-serif;
+        font-size: 3.7rem;
+
+        @include respond(phone-small){
+            font-size: 2rem;
+           }
+    }
+
+    &__paragraph{
+        margin: 2rem 0;
+        font-family: 'Open Sans', sans-serif;
+        color:#b9b9b9;
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        @include respond(phone-small){
+            font-size: 1rem;
+           }
+    }
+
+    &__btn{
+        color: #4BBED1;
+        font-size: 1.3rem;
+        font-family: 'Open Sans', sans-serif;
+
+        &--icon{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+

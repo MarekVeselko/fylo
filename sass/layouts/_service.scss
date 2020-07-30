@@ -1,0 +1,71 @@
+.service-box{
+    display: flex;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    width: 70%;
+
+    @include respond(phone){
+        flex-direction: column;
+      }
+   
+    
+
+
+    &__first-column{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        width: 50%;
+
+        @include respond(phone){
+            width: 100%;
+          }
+
+    }
+
+    &__second-column{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @include respond(phone){
+            width: 100%;
+          }
+          @include respond(phone-small){
+            margin-top: 3rem;
+           }
+    }
+
+    &__content{
+        text-align: center;
+        color:#fff;
+        height: 30rem;
+        
+        @include respond(phone){
+            margin-top: 3rem;
+          }
+
+        &--icon{
+            width: 10rem;
+        }
+
+        &--title{
+            font-family: 'Recursive', sans-serif;
+            font-weight: 300;
+            margin-top: .5rem;
+            font-size: 1.9rem;
+        }
+        &--paragraph{
+            font-size: 1.4rem;
+            margin-top: 1rem;
+            font-weight: 700;
+            width: 70%;
+            position: relative;
+            transform: translateX(-50%);
+            left: 50%;
+            font-family: 'Open Sans', sans-serif;
+            color:#b9b9b9;
+        }
+    }
+}
